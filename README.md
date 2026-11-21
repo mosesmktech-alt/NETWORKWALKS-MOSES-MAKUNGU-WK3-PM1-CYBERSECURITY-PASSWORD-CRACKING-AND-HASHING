@@ -177,6 +177,6 @@ Cybersecurity Trainee | IT Professional | Aspiring Penetration Tester| B084
 
 **Training Institution:** Networkwalks  
 **GitHub:** [mosesmktech-alt](https://github.com/mosesmktech-alt
-Linkedin:
+Linkedin:[www.linkedin.com/in/moses-makungu-366b1038b](https://lnkd.in/p/dybb_hya)
 
 END.
