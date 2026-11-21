@@ -1,127 +1,184 @@
 # NETWORKWALKS-MOSES-MAKUNGU-WK3-PM1-CYBERSECURITY-PASSWORD-CRACKING-AND-HASHING
-</div>
+
+# PASSWORD SECURITY & HASH ANALYSIS LABS
+### JOHN THE RIPPER (JTR) • JOHNNY GUI • NETWORKWALKS SECURITY TOOLS
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Skill-Cybersecurity-404040?style=flat-square&labelColor=C00000" />
-  <img src="https://img.shields.io/badge/Ver-Virtualbox%20v7.2-0070C0?style=flat-square&labelColor=000000" />
-  <img src="https://img.shields.io/badge/Kali%20Linux-v2026.2-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Skill-Linux-404040?style=flat-square&labelColor=C00000" />
-  <img src="https://img.shields.io/badge/Network-10.0.0.0%2F24-238F89?style=flat-square&labelColor=000000" />
-  <img src="https://img.shields.io/badge/Penetration%20Testing-C00000?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Skill-Virtualization-404040?style=flat-square&labelColor=C00000" />
-  <img src="https://img.shields.io/badge/GitHub-404040?style=flat-square&labelColor=0070C0&logo=github&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kali%20Linux-404040?style=flat-square&labelColor=C00000&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/NetworkWalks-404040?style=flat-square&labelColor=C00000" />
-  <img src="https://img.shields.io/badge/Ethical%20Hacking-E87500?style=flat-square&labelColor=000000&logo=kalilinux&logoColor=white" />
-  <img src="https://img.shields.io/badge/Waqas%20Karim%20CCIE-C00000?style=flat-square" />
+  <img src="https://img.shields.io/badge/Domain-Cybersecurity-red?style=for-the-badge&logo=hackaday&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Tool-John%20the%20Ripper-black?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Interface-Johnny%20GUI-blue?style=for-the-badge"/>
+  <img src="https://img.shields.io/badge/Platform-Kali%20Linux-orange?style=for-the-badge&logo=kalilinux&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Status-Completed-success?style=for-the-badge"/>
 </p>
 
-## PASSWORD CRACKING, HASHING & JOHN THE RIPPER (JTR)
+---
 
-### 1. Introduction
+## 1. PROJECT OVERVIEW
 
-Password cracking and hashing are important concepts in cybersecurity and penetration testing. This practical exercise explores how passwords are protected through hashing and how security professionals use password-auditing tools to identify weak password practices.
+This repository documents practical exercises in password security assessment, hash extraction, and password recovery using John the Ripper (JTR), Johnny GUI, and Networkwalks online security tools.
 
-### 2. Understanding Password Cracking
+The exercises focused on examining password-protected PDF documents, extracting their corresponding password hashes, and performing dictionary-based password attacks to evaluate password security.
 
-Password cracking is the process of testing possible password combinations to recover a password associated with a particular password hash.
+The practical sessions provided hands-on exposure to password auditing techniques commonly used in ethical hacking and penetration testing.
 
-In ethical hacking, password cracking is used to evaluate password strength and identify weaknesses in authentication systems.
+**Training Area:** Cybersecurity & Ethical Hacking  
+**Training Platform:** Networkwalks  
+**Primary Focus:** Password Cracking and Hash Analysis
 
-**Common Password Cracking Techniques:**
+## 2. LAB ACTIVITIES & TOOLS
 
-- **Brute Force Attack:** Attempts different character combinations until a match is found.
-- **Dictionary Attack:** Uses a predefined wordlist containing possible passwords.
-- **Hybrid Attack:** Combines dictionary words with numbers, symbols, or other variations.
-- **Rainbow Table Attack:** Uses precomputed tables to look up possible passwords from their hashes.
+The practical work was divided into two main modules, each demonstrating a different approach to password hash extraction and recovery.
 
-### 3. Understanding Password Hashing
+| Module | Practical Exercise | Tools / Platforms |
+|---|---|---|
+| Module 01 | PDF Password Hash Extraction and Cracking | John the Ripper, Johnny GUI, pdf2john |
+| Module 02 | Online Hash Analysis and Password Recovery | Networkwalks Hash Calculator, Password Cracker |
 
-Hashing is the process of converting input data, such as a password, into a fixed-length output using a mathematical algorithm called a hash function.
+## 3. MODULE 01 — JOHN THE RIPPER & JOHNNY GUI
 
-Unlike encryption, hashing is designed to be a one-way process, meaning the original password is not directly recoverable through decryption.
+### Objective
 
-**Key Characteristics of Hashing:**
+To extract password hashes from protected PDF documents and use John the Ripper to perform password recovery through dictionary-based testing.
 
-- Converts input data into a hash value.
-- Produces a fixed-length output for a given algorithm.
-- The same input produces the same hash when the algorithm and settings are unchanged.
-- Small changes in input produce significantly different hash values.
+### Practical Implementation
 
-**Common Hashing Algorithms:**
+1. Identified the password-protected PDF sample provided for the exercise.
+2. Used `pdf2john` to extract the password hash from the PDF document.
+3. Saved the extracted hash in a text file for processing.
+4. Imported the hash into Johnny, the graphical interface for John the Ripper.
+5. Configured the password-testing process using an available wordlist.
+6. Initiated the dictionary attack and monitored the results.
+7. Verified the recovered password by opening the protected PDF document.
 
-| Algorithm | Description |
-|---|---|
-| MD5 | Older 128-bit hash algorithm. |
-| SHA-1 | Older 160-bit hash algorithm. |
-| SHA-256 | Member of the SHA-2 family, producing a 256-bit hash. |
-| bcrypt | Password-hashing algorithm designed to resist brute-force attacks. |
-| Argon2 | Modern password-hashing algorithm designed to resist GPU-based attacks. |
+### Tools Used
 
-**Note:** Secure password storage should use dedicated password-hashing algorithms such as Argon2id, bcrypt, or scrypt, rather than fast general-purpose hashes such as MD5 or SHA-256.
+- John the Ripper (JTR)
+- Johnny GUI
+- pdf2john
+- Wordlists
 
-### 4. Introduction to John the Ripper (JTR)
+## 4. MODULE 02 — NETWORKWALKS HASH ANALYSIS TOOLS
 
-John the Ripper is an open-source password security auditing and recovery tool used by cybersecurity professionals to identify weak passwords and evaluate password security.
+### Objective
 
-It works by testing candidate passwords against supplied password hashes using different techniques, including dictionary attacks and brute-force methods.
+To explore browser-based password hash extraction and recovery using the Networkwalks Hash Calculator and Password Cracker tools.
 
-**Key Features:**
+### Practical Implementation
 
-- Password hash auditing.
-- Dictionary-based password testing.
-- Brute-force password testing.
-- Wordlist-based password recovery.
-- Support for multiple password hash formats.
-- Password strength assessment.
+1. Accessed the Networkwalks Hash Calculator.
+2. Submitted the protected PDF sample for hash extraction.
+3. Obtained the generated PDF password hash.
+4. Transferred the extracted hash to the Networkwalks Password Cracker.
+5. Initiated a dictionary-based password recovery attempt.
+6. Reviewed the output and confirmed the recovered password by unlocking the sample document.
 
-### 5. Practical Commands
+### Tools Used
 
-The following commands demonstrate basic John the Ripper operations in Kali Linux.
+- Networkwalks Hash Calculator
+- Networkwalks Password Cracker
+- Online wordlist-based password testing
 
-**Check John the Ripper version:**
+## 5. TECHNICAL CONCEPTS EXPLORED
 
-```bash
-john --version
-```
+### Password Cracking
 
-**Display available options:**
+Password cracking involves testing possible password combinations against password hashes to identify a matching password. It is used in authorized security assessments to evaluate password strength.
 
-```bash
-john --help
-```
+### Password Hashing
 
-**Run a dictionary attack against an authorized sample hash file:**
+Hashing transforms data into a fixed-length output using a mathematical hash function. In password security, hashes are used to verify passwords without storing the original plaintext password.
 
-```bash
-john --wordlist=/usr/share/wordlists/rockyou.txt hashes.txt
-```
+### Dictionary Attack
 
-**Display recovered passwords:**
+A dictionary attack uses a predefined collection of possible passwords, known as a wordlist, to test against a password hash.
 
-```bash
-john --show hashes.txt
-```
+### PDF Hash Extraction
 
-### 6. Practical Workflow
+PDF hash extraction involves obtaining the password-verification data from a protected PDF document so that an auditing tool can test candidate passwords against it.
 
-1. Obtain a sample password hash from an authorized laboratory environment.
-2. Identify the hash format.
-3. Prepare an appropriate wordlist.
-4. Execute John the Ripper against the sample hash.
-5. Monitor the password-auditing process.
-6. Review the results and document findings.
+## 6. PRACTICAL SCREENSHOTS & EVIDENCE
 
-### 7. Skills and Knowledge Acquired
+The following screenshots document the execution stages and results of the practical exercises.
 
-Through this practical exercise, I developed an understanding of:
+### 6.1 — Extracting PDF Password Hashes Using Networkwalks
 
-- Password security and authentication.
-- Password hashing mechanisms.
-- Differences between hashing and encryption.
-- Common password-cracking methodologies.
+The first stage involved using the Networkwalks online tool to extract the password hash from the protected PDF sample.
+
+![Networkwalks PDF Hash Extraction](https://github.com/user-attachments/assets/ffe3ce8c-9ad8-4612-abcd-523c70c9dbde)
+
+### 6.2 — Alternative PDF Hash Extraction Method
+
+An alternative browser-based tool was also explored to obtain the PDF password hash for further analysis.
+
+![Alternative PDF Hash Extraction](https://github.com/user-attachments/assets/28fbf093-bec3-419f-a0cd-432d73848e12)
+
+### 6.3 — Loading Extracted Hashes into John the Ripper
+
+After extracting the hash, it was saved in a `.txt` file and imported into John the Ripper through Johnny GUI to configure a new password-testing session.
+
+![Loading Hash into John the Ripper](https://github.com/user-attachments/assets/3b394a5e-9f5a-4a20-949f-ccb5b3568f0e)
+
+### 6.4 — Password Recovery and Verification
+
+The password-testing process was executed, and the recovered password was used to access the protected PDF document.
+
+![Password Recovery](https://github.com/user-attachments/assets/c17ffd49-c65c-430b-98ff-bef836583995)
+
+### 6.5 — Final Challenge Result
+
+The final stage demonstrated successful completion of the password-cracking challenge and capture of the associated training flag.
+
+![Successful Flag Capture](https://github.com/user-attachments/assets/9321fa7e-d1cf-4c13-bd83-06e6a72696fc)
+
+## 7. SKILLS & KNOWLEDGE DEVELOPED
+
+Through these practical exercises, I gained exposure to:
+
+- Password security assessment.
+- Password hash extraction.
+- PDF password protection mechanisms.
+- John the Ripper installation and usage.
+- Johnny GUI configuration and operation.
 - Dictionary-based password attacks.
 - Wordlist utilization.
-- John the Ripper installation and command-line operations.
-- Password security auditing.
+- Browser-based hash analysis tools.
+- Password recovery and verification.
+- Technical documentation and evidence collection.
 
+## 8. KEY TAKEAWAYS
+
+The exercises demonstrated how password hashes can be extracted from protected documents and assessed using password-auditing tools.
+
+They also highlighted the importance of strong passwords, secure password-storage mechanisms, and the risks associated with weak or predictable password choices.
+
+Practical exposure to both command-line and graphical password-auditing tools strengthened my understanding of password security testing.
+
+## 9. CONCLUSION
+
+These two practical modules provided valuable hands-on experience in password cracking and hash analysis using John the Ripper, Johnny GUI, and Networkwalks security tools.
+
+The exercises strengthened my understanding of password hash extraction, dictionary attacks, and password recovery workflows within an ethical hacking laboratory environment.
+
+This practical work forms part of my continuing cybersecurity training and development in penetration testing.
+
+## 10. DISCLAIMER
+
+All activities documented in this repository were performed for educational purposes using authorized training materials and laboratory exercises.
+
+Password-auditing techniques should only be applied to files, systems, and accounts that you own or have explicit permission to assess.
+
+---
+
+## AUTHOR
+
+**MOSES MAKANGU**  
+Cybersecurity Trainee | IT Professional | Aspiring Penetration Tester
+
+**Training Institution:** Networkwalks  
+**GitHub:** [mosesmktech-alt](https://github.com/mosesmktech-alt)
+
+<p align="center">
+  <b>LEARN • ANALYZE • TEST • SECURE</b>
+  <br/>
+  <i>Developing practical cybersecurity skills through continuous learning and hands-on experience.</i>
+</p>
