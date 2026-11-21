@@ -106,6 +106,7 @@ The first stage involved using the Networkwalks online tool to extract the passw
 
 ![Networkwalks PDF Hash Extraction](https://github.com/user-attachments/assets/ffe3ce8c-9ad8-4612-abcd-523c70c9dbde)
 
+
 ### 6.2 — Alternative PDF Hash Extraction Method
 
 An alternative browser-based tool was also explored to obtain the PDF password hash for further analysis.
