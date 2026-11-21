@@ -29,7 +29,7 @@ The practical sessions provided hands-on exposure to password auditing technique
 
 The practical work was divided into two main modules, each demonstrating a different approach to password hash extraction and recovery.
 
-| Module | Practical Exercise | Tools / Platforms |
+| Module | Tasks | Tools / Platforms |
 |---|---|---|
 | Module 01 | PDF Password Hash Extraction and Cracking | John the Ripper, Johnny GUI, pdf2john |
 | Module 02 | Online Hash Analysis and Password Recovery | Networkwalks Hash Calculator, Password Cracker |
@@ -172,13 +172,10 @@ Password-auditing techniques should only be applied to files, systems, and accou
 ## AUTHOR
 
 **MOSES MAKANGU**  
-Cybersecurity Trainee | IT Professional | Aspiring Penetration Tester
+Cybersecurity Trainee | IT Professional | Aspiring Penetration Tester| B084
 
 **Training Institution:** Networkwalks  
-**GitHub:** [mosesmktech-alt](https://github.com/mosesmktech-alt)
+**GitHub:** [mosesmktech-alt](https://github.com/mosesmktech-alt
+Linkedin:
 
-<p align="center">
-  <b>LEARN • ANALYZE • TEST • SECURE</b>
-  <br/>
-  <i>Developing practical cybersecurity skills through continuous learning and hands-on experience.</i>
-</p>
+END.
