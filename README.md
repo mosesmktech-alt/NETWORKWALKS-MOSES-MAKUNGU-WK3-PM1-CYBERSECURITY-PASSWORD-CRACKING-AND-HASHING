@@ -172,7 +172,7 @@ Password-auditing techniques should only be applied to files, systems, and accou
 
 ## AUTHOR
 
-**MOSES MAKANGU**  
+**MOSES MAKUNGU**  
 Cybersecurity Trainee | IT Professional | Aspiring Penetration Tester| B084
 
 **Training Institution:** Networkwalks  
